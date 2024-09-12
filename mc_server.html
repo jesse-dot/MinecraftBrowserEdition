@@ -20,7 +20,7 @@
 		// TODO: Run with nogui
 		cheerpjCreateDisplay(-1, -1, document.getElementById("display"));
 		// The server needs to write a few files to its cwd, copy it over to /files/
-		await installFile("https://piston-data.mojang.com/v1/objects/d8321edc9470e56b8ad5c67bbd16beba25843336/server.jar", "/files/server_1.2.5.jar");
+		await installFile("https://launcher.mojang.com/v1/objects/952438ac4e01b4d115c5fc38f891710c4941df29/server.jar", "/files/server_1.2.5.jar");
 		// Copy over a modified configuration allowing any client to connect
 		await installFile("/server.properties", "/files/server.properties");
 		await cheerpjRunJar("/files/server_1.2.5.jar");
